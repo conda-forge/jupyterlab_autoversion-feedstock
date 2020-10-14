@@ -5,9 +5,11 @@ Home: http://github.com/timkpaine/jupyterlab_autoversion
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab_autoversion-feedstock/blob/master/LICENSE.txt)
 
 Summary: Automatically version jupyter notebooks on save
+
+Development: https://github.com/timkpaine/jupyterlab_autoversion
 
 Automatically version jupyter notebooks on save
 

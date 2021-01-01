@@ -1,5 +1,5 @@
 {% set name = "jupyterlab_autoversion" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 91ce357a0875964b9581ffceb3a0525fb33e4723e464267c49f24ba17180cd24
+  sha256: b98c53168efda5e8d4dfa29dd03c530366ab345417ec4bec08bb17bacdb4ff29
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Automatically version jupyter notebooks on save'
+  summary: Automatically version jupyter notebooks on save
 
   description: |
     Automatically version jupyter notebooks on save

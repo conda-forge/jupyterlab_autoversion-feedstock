@@ -1,5 +1,5 @@
 {% set name = "jupyterlab_autoversion" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b98c53168efda5e8d4dfa29dd03c530366ab345417ec4bec08bb17bacdb4ff29
+  sha256: 28ba91a40769c53d1b4833c304096c0dfc5e9515ae06f8d35b4ab5055bd7f70f
 
 build:
   number: 0
@@ -21,10 +21,12 @@ requirements:
     - nodejs
     - yarn
     - jupyter-packaging
+    - jupyterlab >=3.0.0
   run:
     - python >=3.7
     - gitpython >=2.1.11
-    - jupyterlab >=1.0.0
+    - jupyterlab >=3.0.0
+    - notebook
 
 test:
   imports:

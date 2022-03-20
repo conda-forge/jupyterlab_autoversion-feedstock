@@ -25,6 +25,8 @@ requirements:
   run:
     - python >=3.7
     - gitpython >=2.1.11
+    - jupyterlab >=3.0.0
+    - notebook
 
 test:
   imports:

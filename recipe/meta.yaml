@@ -21,10 +21,10 @@ requirements:
     - nodejs
     - yarn
     - jupyter-packaging
+    - jupyterlab >=3.0.0
   run:
     - python >=3.7
     - gitpython >=2.1.11
-    - jupyterlab >=1.0.0
 
 test:
   imports:

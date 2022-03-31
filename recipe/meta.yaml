@@ -1,5 +1,5 @@
 {% set name = "jupyterlab_autoversion" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 28ba91a40769c53d1b4833c304096c0dfc5e9515ae06f8d35b4ab5055bd7f70f
+  sha256: 2ddf52d9907768e441a2fd6e65bfd2a9e66187e3e48b37fefa46739824e9f058
 
 build:
   number: 0

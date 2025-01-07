@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f8260e3fb58d9c4166d4c45a32a9cd8f792f0ed968be7c9c0fa9b887d0933032
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - nodejs
     - yarn
@@ -24,12 +24,14 @@ requirements:
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - gitpython >=2.1.11
     - jupyterlab >=4,<5
     - nbdime
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - jupyterlab_autoversion
 

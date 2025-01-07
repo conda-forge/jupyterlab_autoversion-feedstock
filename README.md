@@ -13,7 +13,6 @@ Development: https://github.com/timkpaine/jupyterlab_autoversion
 
 Automatically version jupyter notebooks on save
 
-
 Current build status
 ====================
 
